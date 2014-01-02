@@ -1,0 +1,11 @@
+<h1>Car Listing Index</h1>
+
+<% @cars.each do |car| %>
+  <p>Year: <%= car.year %><br>
+     Color: <%= car.color %><br>
+     Mielage: <%= car.mileage %><br>
+     Description: <%= car.description %><br>
+  </p><hr>
+<% end %>
+
+<%= link_to 'Create Car', new_car_path %>

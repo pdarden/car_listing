@@ -1,0 +1,7 @@
+<%= simple_form_for(@car, html: {class: 'form-vertical'}) do |f| %>
+  <%= f.input :color %>
+  <%= f.input :year, as: :integer %>
+  <%= f.input :mileage, as: :integer %>
+  <%= f.input :description, as: :text %>
+  <%= f.button :submit, "Add Car" %>
+<% end %>
