@@ -2,9 +2,13 @@
 
 FactoryGirl.define do
   factory :car do
-    color "MyString"
-    year 1
-    mileage 1
-    description "MyText"
+    color "Black"
+    year 2010
+    mileage 29000
+    description "This car is awesome!"
+
+    trait :no_description do
+      description ""
+    end
   end
 end
